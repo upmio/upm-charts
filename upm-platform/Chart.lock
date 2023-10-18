@@ -1,0 +1,33 @@
+dependencies:
+- name: common
+  repository: https://charts.bitnami.com/bitnami
+  version: 2.13.3
+- name: upm-ui
+  repository: https://upmio.github.io/helm-charts
+  version: 1.1.0
+- name: upm-gateway-ms
+  repository: https://upmio.github.io/helm-charts
+  version: 1.1.0
+- name: upm-auth-ms
+  repository: https://upmio.github.io/helm-charts
+  version: 1.1.0
+- name: upm-user-ms
+  repository: https://upmio.github.io/helm-charts
+  version: 1.1.0
+- name: upm-resource-ms
+  repository: https://upmio.github.io/helm-charts
+  version: 1.1.0
+- name: upm-operatelog-ms
+  repository: https://upmio.github.io/helm-charts
+  version: 1.1.0
+- name: upm-service-easysearch-ms
+  repository: https://upmio.github.io/helm-charts
+  version: 1.1.0
+- name: upm-service-kafka-ms
+  repository: https://upmio.github.io/helm-charts
+  version: 1.1.0
+- name: upm-service-mysql-ms
+  repository: https://upmio.github.io/helm-charts
+  version: 1.1.0
+digest: sha256:a0c9c4adbfad8ccf4f8d2b2818f752023177635fe929fb623af9588026d2ee5b
+generated: "2023-10-18T17:54:11.777418+08:00"

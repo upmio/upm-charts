@@ -135,3 +135,23 @@ nginx:
   ## ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
   ##
   tolerations: []
+
+mysql:
+  host: ""
+  port: 3306
+  username: ""
+  password: ""
+
+redis:
+  host: ""
+  port: 6379
+  password: ""
+
+nacos:
+  host: ""
+  port: 8848
+  username: ""
+  password: ""
+  namespace: ""
+  group: ""
+  cluster: ""

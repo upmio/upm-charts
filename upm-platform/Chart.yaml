@@ -7,47 +7,47 @@ dependencies:
       - bitnami-common
     version: 2.x.x
   - name: upm-ui
-    repository: https://github.com/upmio/helm-charts/upm-ui
+    repository: https://upmio.github.io/helm-charts
     tags:
       - upm-ui
     version: 1.1.0
   - name: upm-gateway-ms
-    repository: https://github.com/upmio/helm-charts/upm-gateway-ms
+    repository: https://upmio.github.io/helm-charts
     tags:
       - upm-gateway-ms
     version: 1.1.0
   - name: upm-auth-ms
-    repository: https://github.com/upmio/helm-charts/upm-auth-ms
+    repository: https://upmio.github.io/helm-charts
     tags:
       - upm-auth-ms
     version: 1.1.0
   - name: upm-user-ms
-    repository: https://github.com/upmio/helm-charts/upm-user-ms
+    repository: https://upmio.github.io/helm-charts
     tags:
       -  upm-user-ms
     version: 1.1.0
   - name: upm-resource-ms
-    repository: https://github.com/upmio/helm-charts/upm-resource-ms
+    repository: https://upmio.github.io/helm-charts
     tags:
       - upm-resource-ms
     version: 1.1.0
   - name: upm-operatelog-ms
-    repository: https://github.com/upmio/helm-charts/upm-operatelog-ms
+    repository: https://upmio.github.io/helm-charts
     tags:
       - upm-operatelog-ms
     version: 1.1.0
   - name: upm-service-easysearch-ms
-    repository: https://github.com/upmio/helm-charts/upm-service-easysearch-ms
+    repository: https://upmio.github.io/helm-charts
     tags:
       - upm-service-easysearch-ms
     version: 1.1.0
   - name: upm-service-kafka-ms
-    repository: https://github.com/upmio/helm-charts/upm-service-kafka-ms
+    repository: https://upmio.github.io/helm-charts
     tags:
       - upm-service-kafka-ms
     version: 1.1.0
   - name: upm-service-mysql-ms
-    repository: https://github.com/upmio/helm-charts/upm-service-mysql-ms
+    repository: https://upmio.github.io/helm-charts
     tags:
       - upm-service-mysql-ms
     version: 1.1.0
