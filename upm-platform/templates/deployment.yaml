@@ -1,0 +1,64 @@
+{{- if .Values.nginx.enabled }}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "nginx.fullname" . }}
+  namespace: {{ $.Release.Namespace }}
+  labels: {{- include "common.labels.standard" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels: {{- include "common.labels.matchLabels" . | nindent 8 }}
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  template:
+    metadata:
+      labels: {{ include "common.labels.standard" . | nindent 8 }}
+    spec:
+      restartPolicy: Always
+      {{- include "nginx.imagePullSecrets" . | nindent 6 }}
+      {{- if .Values.nginx.affinity }}
+      affinity: {{- include "common.tplvalues.render" (dict "value" .Values.nginx.affinity "context" $) | nindent 8 }}
+      {{- else }}
+      affinity:
+        podAntiAffinity: {{- include "common.affinities.pods" (dict "type" .Values.nginx.podAntiAffinityPreset "context" $) | nindent 10 }}
+        nodeAffinity: {{- include "common.affinities.nodes" (dict "type" .Values.nginx.nodeAffinityPreset.type "key" .Values.nginx.nodeAffinityPreset.key "values" .Values.nginx.nodeAffinityPreset.values) | nindent 10 }}
+      {{- end }}
+      {{- if .Values.nginx.tolerations }}
+      tolerations: {{- include "common.tplvalues.render" (dict "value" .Values.nginx.tolerations "context" $) | nindent 8 }}
+      {{- end }}
+      containers:
+      - name: nginx
+        image: "{{ include "nginx.image" . }}"
+        imagePullPolicy: {{ .Values.nginx.image.pullPolicy | quote }}
+        ports:
+        - name: {{ .Values.nginx.service.portsName.http }}
+          containerPort: {{ .Values.nginx.service.ports.http }}
+          protocol: TCP
+        resources:
+          {{- toYaml .Values.resources | nindent 12 }}
+        volumeMounts:
+        - name: config
+          mountPath: /etc/nginx
+        {{- if .Values.nginx.livenessProbe.enabled }}
+        livenessProbe: {{- include "common.tplvalues.render" (dict "value" (omit .Values.nginx.livenessProbe "enabled") "context" $) | nindent 10 }}
+          tcpSocket:
+            port: {{ .Values.nginx.service.ports.http }}
+        {{- end}}
+        {{- if .Values.nginx.readinessProbe.enabled }}
+        readinessProbe: {{- include "common.tplvalues.render" (dict "value" (omit .Values.nginx.readinessProbe "enabled") "context" $) | nindent 10 }}
+          tcpSocket:
+            port: {{ .Values.nginx.service.ports.http }}
+        {{- end}}
+        {{- if .Values.nginx.startupProbe.enabled }}
+        startupProbe: {{- include "common.tplvalues.render" (dict "value" (omit .Values.nginx.startupProbe "enabled") "context" $) | nindent 10 }}
+          tcpSocket:
+            port: {{ .Values.nginx.service.ports.http }}
+        {{- end}}
+      volumes:
+      - name: config
+        configMap:
+          name: {{ include "nginx.fullname" . }}
+{{- end }}

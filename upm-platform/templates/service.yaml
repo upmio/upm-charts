@@ -1,0 +1,20 @@
+{{- if .Values.nginx.enabled }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "nginx.fullname" . }}
+  namespace: {{ $.Release.Namespace }}
+  labels: {{- include "common.labels.standard" . | nindent 4 }}
+spec:
+  type: {{ .Values.nginx.service.type }}
+  ipFamilyPolicy: PreferDualStack
+  ports:
+  - port: {{ .Values.nginx.service.ports.http }}
+    targetPort: {{ .Values.nginx.service.ports.http }}
+    protocol: TCP
+    name: {{ .Values.nginx.service.portsName.http }}
+    {{- if contains "NodePort" .Values.nginx.service.type }}
+    nodePort: {{.Values.nginx.service.nodePorts.http}}
+    {{- end }}
+  selector: {{- include "common.labels.standard" . | nindent 4 }}
+{{- end }}
