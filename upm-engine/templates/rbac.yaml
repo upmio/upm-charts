@@ -7,6 +7,7 @@ metadata:
   annotations:
     helm.sh/hook: post-install,post-upgrade
     helm.sh/hook-delete-policy: hook-succeeded
+    helm.sh/hook-weight: "-5"
 rules:
   - apiGroups:
     - ""
@@ -29,6 +30,7 @@ metadata:
   annotations:
     helm.sh/hook: post-install,post-upgrade
     helm.sh/hook-delete-policy: hook-succeeded
+    helm.sh/hook-weight: "-5"
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
@@ -44,4 +46,8 @@ kind: ServiceAccount
 metadata:
   name: {{ .Release.Name }}-import-configmaps-sa
   namespace: {{ .Release.Namespace }}
+  annotations:
+    helm.sh/hook: post-install,post-upgrade
+    helm.sh/hook-delete-policy: hook-succeeded
+    helm.sh/hook-weight: "-5"
 {{- end }}
