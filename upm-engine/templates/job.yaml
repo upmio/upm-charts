@@ -21,13 +21,10 @@ spec:
         image: "{{ include "configmaps.image" . }}"
         imagePullPolicy: {{ .Values.configmaps.image.pullPolicy | quote }}
         command:
-        - /bin/sh
-        - -c
-        - |
-          bash <<'EOF'
-          set -ex
-          kubectl apply --server-side -f /configmaps/ -n ${NAMESPACE} --force-conflicts
-          EOF
+          - /bin/bash
+          - -ec
+          - |
+            kubectl apply --server-side -f /configmaps/ -n ${NAMESPACE} --force-conflicts
         env:
           - name: NAMESPACE
             valueFrom:
