@@ -1,6 +1,11 @@
 apiVersion: v2
 appVersion: 1.2.0
 dependencies:
+  - name: common
+    repository: https://charts.bitnami.com/bitnami
+    tags:
+      - bitnami-common
+    version: 2.x.x
   - name: tesseract
     repository: https://upmio.github.io/helm-charts
     tags:
