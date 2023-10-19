@@ -31,6 +31,7 @@ nginx:
     ##
     # - name: regcred
     pullSecrets: []
+
   service:
     type: ClusterIP
     ports:
