@@ -6,7 +6,7 @@ metadata:
   namespace: {{ $.Release.Namespace }}
   labels: {{- include "common.labels.standard" . | nindent 4 }}
 spec:
-  replicas: {{ .Values.replicaCount }}
+  replicas: {{ .Values.nginx.replicaCount }}
   selector:
     matchLabels: {{- include "common.labels.matchLabels" . | nindent 8 }}
   strategy:
@@ -38,7 +38,7 @@ spec:
           containerPort: {{ .Values.nginx.service.ports.http }}
           protocol: TCP
         resources:
-          {{- toYaml .Values.resources | nindent 12 }}
+          {{- toYaml .Values.nginx.resources | nindent 12 }}
         volumeMounts:
         - name: config
           mountPath: /etc/nginx
