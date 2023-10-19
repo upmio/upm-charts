@@ -5,5 +5,8 @@ dependencies:
 - name: scepter
   repository: https://upmio.github.io/helm-charts
   version: 1.1.0
-digest: sha256:0ec6ee807538396e3b6f1d28967c55dafe30466dc4980d5fb9691a85b8d3e870
-generated: "2023-10-18T19:37:04.830159+08:00"
+- name: gauntlet
+  repository: https://upmio.github.io/helm-charts
+  version: 1.1.0
+digest: sha256:e8e1b19970b44b1db70f80fcf8735eb71b57a7f373afe40072717bd8b9f5032c
+generated: "2023-10-19T17:12:34.559171+08:00"
