@@ -47,19 +47,19 @@ dependencies:
     tags:
       - upm-service-easysearch-ms
     version: 1.1.0
-    alias: serviceEasysearch
+    alias: service-easysearch
   - name: upm-service-kafka-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-service-kafka-ms
     version: 1.1.0
-    alias: serviceKafka
+    alias: service-kafka
   - name: upm-service-mysql-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-service-mysql-ms
     version: 1.1.0
-    alias: serviceMysql
+    alias: service-mysql
 name: upm-platform
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
