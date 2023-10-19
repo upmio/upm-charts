@@ -26,6 +26,12 @@ spec:
         - |
           bash <<'EOF'
           set -ex
-          kubectl apply --server-side -f /configmaps/ --force-conflicts
+          kubectl apply --server-side -f /configmaps/ -n ${NAMESPACE} --force-conflicts
           EOF
+        env:
+          - name: NAMESPACE
+            valueFrom:
+              fieldRef:
+                apiVersion: v1
+                fieldPath: metadata.namespace
 {{- end -}}
