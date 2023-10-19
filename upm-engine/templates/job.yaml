@@ -1,4 +1,4 @@
-{{- if .Values.configmaps }}
+{{- if .Values.configmaps.enabled }}
 apiVersion: batch/v1
 kind: Job
 metadata:

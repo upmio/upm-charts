@@ -1,4 +1,4 @@
-{{- if .Values.configmaps }}
+{{- if .Values.configmaps.enabled }}
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
@@ -25,6 +25,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   name: {{ .Release.Name }}-import-configmaps-rolebinding
+  namespace: {{ .Release.Namespace }}
   annotations:
     helm.sh/hook: post-install,post-upgrade
     helm.sh/hook-delete-policy: hook-succeeded
