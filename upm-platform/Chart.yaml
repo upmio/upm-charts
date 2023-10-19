@@ -11,46 +11,55 @@ dependencies:
     tags:
       - upm-ui
     version: 1.1.0
+    alias: ui
   - name: upm-gateway-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-gateway-ms
     version: 1.1.0
+    alias: gateway
   - name: upm-auth-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-auth-ms
     version: 1.1.0
+    alias: auth
   - name: upm-user-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       -  upm-user-ms
     version: 1.1.0
+    alias: user
   - name: upm-resource-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-resource-ms
     version: 1.1.0
+    alias: resource
   - name: upm-operatelog-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-operatelog-ms
     version: 1.1.0
+    alias: operatelog
   - name: upm-service-easysearch-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-service-easysearch-ms
     version: 1.1.0
+    alias: serviceEasysearch
   - name: upm-service-kafka-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-service-kafka-ms
     version: 1.1.0
+    alias: serviceKafka
   - name: upm-service-mysql-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-service-mysql-ms
     version: 1.1.0
+    alias: serviceMysql
 name: upm-platform
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.

@@ -23,11 +23,11 @@ data:
       keepalive_timeout 65;
 
       upstream api {
-        server {{ include "upm-gateway-ms.fullname" .Subcharts.upm-gateway-ms }}:{{ .Values.upm-gateway-ms.service.ports.http }};
+        server {{ include "upm-gateway-ms.fullname" .Subcharts.gateway }}:{{ .Values.gateway.service.ports.http }};
       }
 
       upstream ui {
-        server {{ include "upm-ui.fullname" .Subcharts.upm-ui }}:{{ .Values.upm-ui.service.ports.http }};
+        server {{ include "upm-ui.fullname" .Subcharts.ui }}:{{ .Values.ui.service.ports.http }};
       }
 
       server {
