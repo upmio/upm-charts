@@ -35,11 +35,9 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
   name: {{ .Release.Name }}-import-configmaps-role
-  namespace: {{ .Release.Namespace }}
 subjects:
   - kind: ServiceAccount
     name: {{ .Release.Name }}-import-configmaps-sa
-    namespace: {{ .Release.Namespace }}
 ---
 apiVersion: v1
 kind: ServiceAccount
