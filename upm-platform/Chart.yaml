@@ -54,6 +54,12 @@ dependencies:
       - upm-service-kafka-ms
     version: 1.1.0
     alias: service-kafka
+  - name: upm-service-zookeeper-ms
+    repository: https://upmio.github.io/helm-charts
+    tags:
+      - upm-service-zookeeper-ms
+    version: 1.1.0
+    alias: service-zookeeper
   - name: upm-service-mysql-ms
     repository: https://upmio.github.io/helm-charts
     tags:

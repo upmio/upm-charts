@@ -26,8 +26,11 @@ dependencies:
 - name: upm-service-kafka-ms
   repository: https://upmio.github.io/helm-charts
   version: 1.1.0
+- name: upm-service-zookeeper-ms
+  repository: https://upmio.github.io/helm-charts
+  version: 1.1.0
 - name: upm-service-mysql-ms
   repository: https://upmio.github.io/helm-charts
   version: 1.1.0
-digest: sha256:77cd477df17e0f0d648851d501d54f658f6d7ae9b1771ab0be2b6a7c7a8ec01c
-generated: "2023-11-02T14:29:36.243174+08:00"
+digest: sha256:33a38058fe311041eee5f0d9daba10fe766f5268db4eb4ed6eb8637284069eb8
+generated: "2023-11-10T11:42:22.745348757+08:00"
