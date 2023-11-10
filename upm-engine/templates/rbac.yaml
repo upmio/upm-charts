@@ -2,6 +2,8 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
+  labels:
+    app.kubernetes.io/instance: {{ .Release.Name | quote }}
   name: {{ .Release.Name }}-import-configmaps-role
   namespace: {{ .Release.Namespace }}
   annotations:
@@ -25,6 +27,8 @@ rules:
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
+  labels:
+    app.kubernetes.io/instance: {{ .Release.Name | quote }}
   name: {{ .Release.Name }}-import-configmaps-rolebinding
   namespace: {{ .Release.Namespace }}
   annotations:
@@ -42,6 +46,8 @@ subjects:
 apiVersion: v1
 kind: ServiceAccount
 metadata:
+  labels:
+    app.kubernetes.io/instance: {{ .Release.Name | quote }}
   name: {{ .Release.Name }}-import-configmaps-sa
   namespace: {{ .Release.Namespace }}
   annotations:

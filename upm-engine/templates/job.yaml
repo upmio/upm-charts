@@ -2,6 +2,8 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
+  labels:
+    app.kubernetes.io/instance: {{ .Release.Name | quote }}
   name: "{{ .Release.Name }}-import-configmaps"
   namespace: {{ .Release.Namespace }}
   annotations:
