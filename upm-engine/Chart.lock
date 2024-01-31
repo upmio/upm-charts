@@ -1,7 +1,7 @@
 dependencies:
 - name: common
   repository: https://charts.bitnami.com/bitnami
-  version: 2.13.3
+  version: 2.14.1
 - name: tesseract
   repository: https://upmio.github.io/helm-charts
   version: 1.1.0
@@ -10,6 +10,6 @@ dependencies:
   version: 1.1.0
 - name: gauntlet
   repository: https://upmio.github.io/helm-charts
-  version: 1.1.0
-digest: sha256:d0d268a77fd010c4c8afbd1376f25f5224252c37095e278e996237e875112cc5
-generated: "2023-10-19T17:33:30.484042+08:00"
+  version: 1.1.1
+digest: sha256:e4147c3a7bce0653f24250522f05e382061cf13146edd9cac42406d39e971948
+generated: "2024-01-31T16:58:13.314808818+08:00"
