@@ -4,12 +4,12 @@ dependencies:
   version: 2.14.1
 - name: tesseract
   repository: https://upmio.github.io/helm-charts
-  version: 1.1.0
+  version: 1.1.1
 - name: scepter
   repository: https://upmio.github.io/helm-charts
-  version: 1.1.0
+  version: 1.1.1
 - name: gauntlet
   repository: https://upmio.github.io/helm-charts
   version: 1.1.1
-digest: sha256:e4147c3a7bce0653f24250522f05e382061cf13146edd9cac42406d39e971948
-generated: "2024-01-31T16:58:13.314808818+08:00"
+digest: sha256:0d3cef4f4608d1e1dbba2cfcc970192e67022366590325634f02e2ff584462b4
+generated: "2024-02-01T10:58:24.678995066+08:00"

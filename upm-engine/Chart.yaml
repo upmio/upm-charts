@@ -10,12 +10,12 @@ dependencies:
     repository: https://upmio.github.io/helm-charts
     tags:
       - tesseract
-    version: 1.1.0
+    version: 1.1.1
   - name: scepter
     repository: https://upmio.github.io/helm-charts
     tags:
       - scepter
-    version: 1.1.0
+    version: 1.1.1
   - name: gauntlet
     repository: https://upmio.github.io/helm-charts
     tags:
