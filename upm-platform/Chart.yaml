@@ -48,6 +48,12 @@ dependencies:
       - upm-service-easysearch-ms
     version: 1.1.0
     alias: service-easysearch
+  - name: upm-service-elasticsearch-ms
+    repository: https://upmio.github.io/helm-charts
+    tags:
+      - upm-service-elasticsearch-ms
+    version: 1.1.0
+    alias: service-elasticsearch
   - name: upm-service-kafka-ms
     repository: https://upmio.github.io/helm-charts
     tags:

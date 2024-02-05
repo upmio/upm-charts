@@ -23,6 +23,9 @@ dependencies:
 - name: upm-service-easysearch-ms
   repository: https://upmio.github.io/helm-charts
   version: 1.1.0
+- name: upm-service-elasticsearch-ms
+  repository: https://upmio.github.io/helm-charts
+  version: 1.1.0
 - name: upm-service-kafka-ms
   repository: https://upmio.github.io/helm-charts
   version: 1.1.0
@@ -32,5 +35,5 @@ dependencies:
 - name: upm-service-mysql-ms
   repository: https://upmio.github.io/helm-charts
   version: 1.1.0
-digest: sha256:3d265f22c1b920134de409858a50c0ee6ae229a52594215c0b88afe0f96970c9
-generated: "2024-01-18T22:54:40.961799+08:00"
+digest: sha256:8ff508f0c0fdde7a6a106219276ca417a8022307bf2de72d588a55decf4b3e84
+generated: "2024-02-05T15:50:30.37358+08:00"
