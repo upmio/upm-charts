@@ -48,30 +48,35 @@ dependencies:
       - upm-service-easysearch-ms
     version: 1.1.0
     alias: service-easysearch
+    condition: easysearch.enabled
   - name: upm-service-elasticsearch-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-service-elasticsearch-ms
     version: 1.1.0
     alias: service-elasticsearch
+    condition: elasticsearch.enabled
   - name: upm-service-kafka-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-service-kafka-ms
     version: 1.1.0
     alias: service-kafka
+    condition: kafka.enabled
   - name: upm-service-zookeeper-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-service-zookeeper-ms
     version: 1.1.0
     alias: service-zookeeper
+    condition: zookeeper.enabled
   - name: upm-service-mysql-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-service-mysql-ms
     version: 1.1.0
     alias: service-mysql
+    condition: mysql.enabled
 name: upm-platform
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
