@@ -35,5 +35,5 @@ dependencies:
 - name: upm-service-mysql-ms
   repository: https://upmio.github.io/helm-charts
   version: 1.1.0
-digest: sha256:1ef030bf0dad10fda89afd0cb63c07a2686d137cda929b03d20ff053fd5d4892
-generated: "2024-02-19T14:55:54.531078+08:00"
+digest: sha256:15636053a02f4e3f366355c0e51a367d7a21007c7a3881cd7cab62f0f8d903a9
+generated: "2024-02-19T15:30:54.930543+08:00"

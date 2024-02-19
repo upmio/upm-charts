@@ -157,3 +157,15 @@ nacos:
   namespace: "upm-system"
   group: "DEFAULT_GROUP"
   cluster: "local"
+
+upm:
+  mysql:
+    enabled: false
+  easysearch:
+    enabled: false
+  elasticsearch:
+    enabled: false
+  kafka:
+    enabled: false
+  zookeeper:
+    enabled: false
