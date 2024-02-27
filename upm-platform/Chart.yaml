@@ -77,6 +77,13 @@ dependencies:
     version: 1.1.0
     alias: service-mysql
     condition: upm.mysql.enabled
+  - name: upm-service-redis-ms
+    repository: https://upmio.github.io/helm-charts
+    tags:
+      - upm-service-redis-ms
+    version: 1.1.0
+    alias: service-redis
+    condition: upm.redis.enabled
 name: upm-platform
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.

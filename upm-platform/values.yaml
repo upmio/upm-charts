@@ -161,6 +161,8 @@ nacos:
 upm:
   mysql:
     enabled: false
+  redis:
+    enabled: false
   easysearch:
     enabled: false
   elasticsearch:
