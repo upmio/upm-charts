@@ -38,5 +38,8 @@ dependencies:
 - name: upm-service-redis-ms
   repository: https://upmio.github.io/helm-charts
   version: 1.1.0
-digest: sha256:2a8a4957df246731bc43e31ebc6532068b774585ae9e54b66ec63de3723e95f0
-generated: "2024-03-11T12:21:05.017492099+08:00"
+- name: helix
+  repository: https://upmio.github.io/helm-charts
+  version: 1.1.1
+digest: sha256:769008f16ca710936913898f688fe02b921ed52873a820d647c7e74298377350
+generated: "2024-03-11T14:03:20.569875256+08:00"
