@@ -1,7 +1,7 @@
 dependencies:
 - name: common
   repository: https://charts.bitnami.com/bitnami
-  version: 2.18.0
+  version: 2.19.0
 - name: upm-ui
   repository: https://upmio.github.io/helm-charts
   version: 1.1.0
@@ -38,5 +38,5 @@ dependencies:
 - name: upm-service-redis-ms
   repository: https://upmio.github.io/helm-charts
   version: 1.1.0
-digest: sha256:199e0166ab5c3ad6ce34108f50e93c2dcf56e76d05e42f176043cd4f978bb4f7
-generated: "2024-03-05T12:49:04.284736148+08:00"
+digest: sha256:2a8a4957df246731bc43e31ebc6532068b774585ae9e54b66ec63de3723e95f0
+generated: "2024-03-11T12:21:05.017492099+08:00"
