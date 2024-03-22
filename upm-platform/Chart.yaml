@@ -42,19 +42,12 @@ dependencies:
       - upm-operatelog-ms
     version: 1.1.0
     alias: operatelog
-  - name: upm-service-easysearch-ms
+  - name: upm-service-es-ms
     repository: https://upmio.github.io/helm-charts
     tags:
-      - upm-service-easysearch-ms
+      - upm-service-es-ms
     version: 1.1.0
-    alias: service-easysearch
-    condition: upm.easysearch.enabled
-  - name: upm-service-elasticsearch-ms
-    repository: https://upmio.github.io/helm-charts
-    tags:
-      - upm-service-elasticsearch-ms
-    version: 1.1.0
-    alias: service-elasticsearch
+    alias: service-es
     condition: upm.elasticsearch.enabled
   - name: upm-service-kafka-ms
     repository: https://upmio.github.io/helm-charts
@@ -84,6 +77,13 @@ dependencies:
     version: 1.1.0
     alias: service-redis
     condition: upm.redis.enabled
+  - name: upm-service-redis-cluster-ms
+    repository: https://upmio.github.io/helm-charts
+    tags:
+      - upm-service-redis-cluster-ms
+    version: 1.1.0
+    alias: service-redis-cluster
+    condition: upm.redis-cluster.enabled
   - name: helix
     repository: https://upmio.github.io/helm-charts
     tags:
