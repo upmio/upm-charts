@@ -163,11 +163,11 @@ upm:
     enabled: false
   redis:
     enabled: false
+  redis-cluster:
+    enabled: false
   elasticsearch:
     enabled: false
   kafka:
     enabled: false
   zookeeper:
-    enabled: false
-  redis-cluster:
     enabled: false
