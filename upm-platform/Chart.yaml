@@ -47,7 +47,7 @@ dependencies:
     tags:
       - upm-service-es-ms
     version: 1.1.0
-    alias: service-es
+    alias: service-elasticsearch
     condition: upm.elasticsearch.enabled
   - name: upm-service-kafka-ms
     repository: https://upmio.github.io/helm-charts
