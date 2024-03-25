@@ -41,5 +41,5 @@ dependencies:
 - name: helix
   repository: https://upmio.github.io/helm-charts
   version: 1.1.1
-digest: sha256:59f20949d40e4827c776fb947bc8a5dd1681b1b3d0fc42a252a6e806781edabf
-generated: "2024-03-24T23:37:22.90911321+08:00"
+digest: sha256:8b5c649cb7231a7401c17106789c63002ab0b5a69acd969f1d3a54338dd3a43b
+generated: "2024-03-25T16:28:49.812643467+08:00"
