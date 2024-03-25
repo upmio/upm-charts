@@ -42,10 +42,10 @@ dependencies:
       - upm-operatelog-ms
     version: 1.1.0
     alias: operatelog
-  - name: upm-service-es-ms
+  - name: upm-service-elasticsearch-ms
     repository: https://upmio.github.io/helm-charts
     tags:
-      - upm-service-es-ms
+      - upm-service-elasticsearch-ms
     version: 1.1.0
     alias: service-elasticsearch
     condition: upm.elasticsearch.enabled
