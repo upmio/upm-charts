@@ -90,6 +90,12 @@ dependencies:
       - helix
     version: 1.1.1
     alias: helix
+  - name: postgresql
+    repository: https://upmio.github.io/helm-charts
+    tags:
+      - postgresql
+    version: 1.1.0
+    alias: postgresql
 name: upm-platform
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
