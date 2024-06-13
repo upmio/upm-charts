@@ -1,5 +1,5 @@
 apiVersion: v2
-appVersion: v1.1.0
+appVersion: v1.1.1
 dependencies:
   - name: common
     repository: https://charts.bitnami.com/bitnami
@@ -10,85 +10,85 @@ dependencies:
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-ui
-    version: 1.1.0
+    version: 1.1.1
     alias: ui
   - name: upm-gateway-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-gateway-ms
-    version: 1.1.0
+    version: 1.1.1
     alias: gateway
   - name: upm-auth-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-auth-ms
-    version: 1.1.0
+    version: 1.1.1
     alias: auth
   - name: upm-user-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       -  upm-user-ms
-    version: 1.1.0
+    version: 1.1.1
     alias: user
   - name: upm-resource-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-resource-ms
-    version: 1.1.0
+    version: 1.1.1
     alias: resource
   - name: upm-operatelog-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-operatelog-ms
-    version: 1.1.0
+    version: 1.1.1
     alias: operatelog
   - name: upm-service-elasticsearch-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-service-elasticsearch-ms
-    version: 1.1.0
+    version: 1.1.1
     alias: service-elasticsearch
     condition: upm.elasticsearch.enabled
   - name: upm-service-kafka-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-service-kafka-ms
-    version: 1.1.0
+    version: 1.1.1
     alias: service-kafka
     condition: upm.kafka.enabled
   - name: upm-service-zookeeper-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-service-zookeeper-ms
-    version: 1.1.0
+    version: 1.1.1
     alias: service-zookeeper
     condition: upm.zookeeper.enabled
   - name: upm-service-mysql-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-service-mysql-ms
-    version: 1.1.0
+    version: 1.1.1
     alias: service-mysql
     condition: upm.mysql.enabled
   - name: upm-service-redis-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-service-redis-ms
-    version: 1.1.0
+    version: 1.1.1
     alias: service-redis
     condition: upm.redis.enabled
   - name: upm-service-redis-cluster-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-service-redis-cluster-ms
-    version: 1.1.0
+    version: 1.1.1
     alias: service-redis-cluster
     condition: upm.redis-cluster.enabled
   - name: upm-service-postgresql-ms
     repository: https://upmio.github.io/helm-charts
     tags:
       - upm-service-postgresql-ms
-    version: 1.1.0
+    version: 1.1.1
     alias: service-postgresql
     condition: upm.postgresql.enabled
   - name: helix
@@ -101,7 +101,7 @@ name: upm-platform
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
 # Versions are expected to follow Semantic Versioning (https://semver.org/)
-version: 1.1.0
+version: 1.1.
 description: Chart for upm platform
 # A chart can be either an 'application' or a 'library' chart.
 #

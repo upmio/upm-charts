@@ -15,9 +15,9 @@ nginx:
   replicaCount: 1
   image:
     # Repository for container
-    registry: docker.io
-    repository: nginx
-    tag: 1.19
+    registry: quay.io
+    repository: upmio/nginx
+    tag: 1.26
     ## Specify a imagePullPolicy
     ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     ## ref: https://kubernetes.io/docs/user-guide/images/#pre-pulling-images
