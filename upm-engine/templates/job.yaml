@@ -28,10 +28,18 @@ spec:
           - -ec
           - |
             kubectl apply --server-side -f /configmaps/ -n ${NAMESPACE} --force-conflicts
+            if [[ $IMAGE_REGISTRY == "" ]]; then
+              IMAGE_REGISTRY="quay.io"
+            fi
+            for i in `kubectl get cm -n ${NAMESPACE} | grep pod-tmpl | awk '{print $1}'`;do
+              kubectl patch configmap -n ${NAMESPACE} $i --patch '{"data": {"imageRegistry": "'"${IMAGE_REGISTRY}"'"}}';
+            done
         env:
           - name: NAMESPACE
             valueFrom:
               fieldRef:
                 apiVersion: v1
                 fieldPath: metadata.namespace
+          - name: IMAGE_REGISTRY
+            value: {{ .Values.global.imageRegistry | quote }}
 {{- end -}}
