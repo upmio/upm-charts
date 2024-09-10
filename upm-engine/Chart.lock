@@ -4,9 +4,9 @@ dependencies:
   version: 2.22.0
 - name: tesseract-cube
   repository: https://upmio.github.io/helm-charts
-  version: 1.1.0
+  version: 1.2.1
 - name: kauntlet
   repository: https://upmio.github.io/helm-charts
-  version: 1.1.1
-digest: sha256:e4183eb5b05a2d4b5d710420c8a945ed9bde0056ce62ce8c54212e7f10fca5a3
-generated: "2024-08-26T11:01:24.487006972+08:00"
+  version: 1.2.1
+digest: sha256:f88103dc07024aed637d56b32a1fc380b11e45f5c21c8ceb55cc391b7839baaa
+generated: "2024-09-10T08:39:29.994019+08:00"
