@@ -1,0 +1,30 @@
+apiVersion: v2
+appVersion: v1.2.1
+dependencies:
+  - name: ui
+    repository: https://upmio.github.io/helm-charts
+    tags:
+      - ui
+    version: 1.2.1
+    alias: ui
+  - name: apiserver
+    repository: https://upmio.github.io/helm-charts
+    tags:
+      - apiserver
+    version: 1.2.1
+    alias: apiserver
+name: upm-control
+# This is the chart version. This version number should be incremented each time you make changes
+# to the chart and its templates, including the app version.
+# Versions are expected to follow Semantic Versioning (https://semver.org/)
+version: 1.2.1
+description: Chart for UPM-control
+# A chart can be either an 'application' or a 'library' chart.
+#
+# Application charts are a collection of templates that can be packaged into versioned archives
+# to be deployed.
+#
+# Library charts provide useful utilities or functions for the chart developer. They're included as
+# a dependency of application charts to inject those utilities and functions into the rendering
+# pipeline. Library charts do not define any templates and therefore cannot be deployed.
+type: application
