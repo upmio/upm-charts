@@ -6,4 +6,4 @@ dependencies:
   repository: https://upmio.github.io/helm-charts
   version: 1.2.1
 digest: sha256:fd67b790ee4ce94b0fa48c7ebbc5edca11ed7b31edf3b4c4925b2640cec67b52
-generated: "2024-10-10T16:39:21.97445+08:00"
+generated: "2024-10-11T09:33:56.579119+08:00"

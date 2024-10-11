@@ -27,7 +27,7 @@ data:
       }
 
       upstream ui {
-        server {{ include "ui.fullname" .Subcharts.ui }}:{{ .Values.ui.service.ports.http }};
+        server {{ include "upm-ui.fullname" .Subcharts.ui }}:{{ .Values.ui.service.ports.http }};
       }
 
       server {
