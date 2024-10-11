@@ -3,3 +3,8 @@
 *.iws
 *.iml
 *.ipr
+
+### Charts ###
+upm-platform/charts/*
+upm-control/charts/*
+upm-engine/charts/*
