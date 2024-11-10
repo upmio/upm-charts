@@ -4,6 +4,6 @@ dependencies:
   version: 1.2.1
 - name: apiserver
   repository: https://upmio.github.io/helm-charts
-  version: 1.2.1
-digest: sha256:fd67b790ee4ce94b0fa48c7ebbc5edca11ed7b31edf3b4c4925b2640cec67b52
-generated: "2024-10-11T10:03:22.57862+08:00"
+  version: 1.2.2
+digest: sha256:f5da9b4d356d27fdfac6ac3cc7db335fb27bbc72efff70dc7385055c4b5961a9
+generated: "2024-11-10T20:26:26.288486+08:00"
