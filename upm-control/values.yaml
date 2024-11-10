@@ -2504,7 +2504,7 @@ apiserver:
 
     image:
       registry: quay.io
-      repository: upmio/upm-service-postgresql-ms
+      repository: upmio/upm-service-cnpg-ms
       tag: v1.2.1
       digest: ""
       ## Specify a imagePullPolicy
