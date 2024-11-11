@@ -1,12 +1,12 @@
 dependencies:
 - name: common
   repository: https://charts.bitnami.com/bitnami
-  version: 2.22.0
+  version: 2.27.0
 - name: tesseract-cube
   repository: https://upmio.github.io/helm-charts
-  version: 1.2.1
+  version: 1.2.2
 - name: kauntlet
   repository: https://upmio.github.io/helm-charts
   version: 1.2.1
-digest: sha256:f88103dc07024aed637d56b32a1fc380b11e45f5c21c8ceb55cc391b7839baaa
-generated: "2024-09-10T08:39:29.994019+08:00"
+digest: sha256:3684449f3704aa09a906c268701e3396683cc87f6677640f66918f30aaced28f
+generated: "2024-11-11T12:07:14.007351+08:00"
