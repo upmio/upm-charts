@@ -1,3 +1,0 @@
-Successfully installed upm-platform.
-
-Check the status by running: kubectl get pods -n {{ .Release.Namespace }}

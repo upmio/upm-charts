@@ -1,48 +1,9 @@
 dependencies:
-- name: common
-  repository: https://charts.bitnami.com/bitnami
-  version: 2.20.2
-- name: upm-ui
+- name: ui
   repository: https://upmio.github.io/helm-charts
-  version: 1.1.1
-- name: upm-gateway-ms
+  version: 1.2.1
+- name: apiserver
   repository: https://upmio.github.io/helm-charts
-  version: 1.1.1
-- name: upm-auth-ms
-  repository: https://upmio.github.io/helm-charts
-  version: 1.1.1
-- name: upm-user-ms
-  repository: https://upmio.github.io/helm-charts
-  version: 1.1.1
-- name: upm-resource-ms
-  repository: https://upmio.github.io/helm-charts
-  version: 1.1.1
-- name: upm-operatelog-ms
-  repository: https://upmio.github.io/helm-charts
-  version: 1.1.1
-- name: upm-service-elasticsearch-ms
-  repository: https://upmio.github.io/helm-charts
-  version: 1.1.1
-- name: upm-service-kafka-ms
-  repository: https://upmio.github.io/helm-charts
-  version: 1.1.1
-- name: upm-service-zookeeper-ms
-  repository: https://upmio.github.io/helm-charts
-  version: 1.1.1
-- name: upm-service-mysql-ms
-  repository: https://upmio.github.io/helm-charts
-  version: 1.1.1
-- name: upm-service-redis-ms
-  repository: https://upmio.github.io/helm-charts
-  version: 1.1.1
-- name: upm-service-redis-cluster-ms
-  repository: https://upmio.github.io/helm-charts
-  version: 1.1.1
-- name: upm-service-postgresql-ms
-  repository: https://upmio.github.io/helm-charts
-  version: 1.1.1
-- name: helix
-  repository: https://upmio.github.io/helm-charts
-  version: 1.1.1
-digest: sha256:83d0124b8d8842b469b02b08cb8b4278488f6175b8b54a3b2f0dbd18e72fd729
-generated: "2024-06-13T14:30:41.80362+08:00"
+  version: 1.2.2
+digest: sha256:f5da9b4d356d27fdfac6ac3cc7db335fb27bbc72efff70dc7385055c4b5961a9
+generated: "2024-11-10T20:26:26.288486+08:00"

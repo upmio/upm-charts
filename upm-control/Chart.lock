@@ -1,9 +1,0 @@
-dependencies:
-- name: ui
-  repository: https://upmio.github.io/helm-charts
-  version: 1.2.1
-- name: apiserver
-  repository: https://upmio.github.io/helm-charts
-  version: 1.2.2
-digest: sha256:f5da9b4d356d27fdfac6ac3cc7db335fb27bbc72efff70dc7385055c4b5961a9
-generated: "2024-11-10T20:26:26.288486+08:00"
