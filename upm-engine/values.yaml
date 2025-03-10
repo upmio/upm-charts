@@ -15,7 +15,7 @@ tesseract-cube:
     enabled: true
   image:
     registry: quay.io
-    tag: v1.2.1
+    tag: v1.2.3
   nodeAffinityPreset:
     type: "hard"
     key: "upm.engine.node"
@@ -27,7 +27,7 @@ kauntlet:
     enabled: true
   image:
     registry: quay.io
-    tag: v1.2.1
+    tag: v1.2.3
   nodeAffinityPreset:
     type: "hard"
     key: "upm.engine.node"
@@ -40,7 +40,7 @@ configmaps:
     # Repository for container
     registry: quay.io
     repository: upmio/upm-template
-    tag: v1.2.1
+    tag: v1.2.3
     ## Specify a imagePullPolicy
     ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     ## ref: https://kubernetes.io/docs/user-guide/images/#pre-pulling-images
