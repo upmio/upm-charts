@@ -7,6 +7,6 @@ dependencies:
   version: 1.2.2
 - name: kauntlet
   repository: https://upmio.github.io/helm-charts
-  version: 1.2.1
-digest: sha256:3684449f3704aa09a906c268701e3396683cc87f6677640f66918f30aaced28f
-generated: "2024-11-11T12:07:14.007351+08:00"
+  version: 1.2.3
+digest: sha256:9d56b34206d9d79b5f8f1813d3edffd457d6f85de3b8f3535fc85b6c138cc854
+generated: "2025-03-10T11:38:07.772214+08:00"
