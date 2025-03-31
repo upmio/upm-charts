@@ -6,15 +6,15 @@ dependencies:
     tags:
       - bitnami-common
     version: 2.x.x
-  - name: tesseract-cube
+  - name: unit-operator
     repository: https://upmio.github.io/helm-charts
     tags:
-      - tesseract-cube
-    version: 1.2.2
-  - name: kauntlet
+      - unit-operator
+    version: 1.2.3
+  - name: compose-operator
     repository: https://upmio.github.io/helm-charts
     tags:
-      - kauntlet
+      - compose-operator
     version: 1.2.3
 name: upm-engine
 # This is the chart version. This version number should be incremented each time you make changes

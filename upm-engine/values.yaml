@@ -10,7 +10,7 @@ nameOverride: ""
 
 fullnameOverride: ""
 
-tesseract-cube:
+unit-operator:
   crds:
     enabled: true
   image:
@@ -22,7 +22,7 @@ tesseract-cube:
     values:
       - "enable"
 
-kauntlet:
+compose-operator:
   crds:
     enabled: true
   image:
