@@ -5,5 +5,5 @@
 *.ipr
 
 ### Charts ###
-upm-platform/charts/*
-upm-engine/charts/*
+upm-platform/charts/*.tgz
+upm-engine/charts/*.tgz
