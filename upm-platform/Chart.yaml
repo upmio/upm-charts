@@ -7,7 +7,7 @@ dependencies:
       - ui
     version: 1.2.1
     alias: ui
-  - name: apiserver
+  - name: upm-api-server
     repository: https://upmio.github.io/helm-charts
     tags:
       - apiserver
