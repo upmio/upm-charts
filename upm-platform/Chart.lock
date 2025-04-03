@@ -1,9 +1,9 @@
 dependencies:
-- name: ui
+- name: upm-ui
   repository: https://upmio.github.io/helm-charts
-  version: 1.2.1
+  version: 1.2.3
 - name: upm-api-server
   repository: https://upmio.github.io/helm-charts
   version: 1.2.3
-digest: sha256:4b491a9d166f400f7c516d723041e23612aba3b29bc49cb3cfb30b76699ef738
-generated: "2025-04-03T08:49:03.744385+08:00"
+digest: sha256:99a449d9da701bc22338277eb915f7586617c89d26424a116f3e81c3b0c72a15
+generated: "2025-04-03T10:47:01.993217+08:00"
